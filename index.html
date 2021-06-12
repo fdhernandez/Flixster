@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title> 🍿 Flixster </title>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Flixster 🎬</h1>
+        <form>
+          <div class="form-group">
+              <input type = "text" id= "inputValue" placeholder="Enter a movie">
+          </div>    
+          <button type="Submit" id ="search" >Search</button>
+          <form><input type=button id= "back"  value="❌" onClick="history.go()"></form>
+        </form>
+    
+        <div id = "searchable-movies"> </div>
+        <div id = "movieContainer"></div>
+    </div>  
+    <div class= "show-more">
+         <button id="showMoreBtn" type="button" class="searchBtn hidden">Load More</button>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div> 
+    <script src = "APIcommands.js"></script>
+    <script src = "script.js"></script>
+</body>
+</html>
